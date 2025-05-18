@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sladky_sunduk</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header__inner">
+                <div class="header__logo">
+                    <h1 class="logo__text"><a href="#">Сладкий сундук</a></h1>
+                </div>
+                <div class="header__address">
+                    <div class="address-block">
+                        <div class="address__icon">
+                        <svg width="13" height="17" viewBox="0 0 13 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12.0788 4.23113C12.0183 4.00434 11.8954 3.76268 11.8045 3.55111C10.7167 0.936887 8.33993 0 6.42078 0C3.85165 0 1.02206 1.72271 0.644287 5.27362V5.99909C0.644287 6.02937 0.654722 6.30134 0.669543 6.43738C0.881315 8.12966 2.21665 9.92817 3.21393 11.6205C4.28686 13.4336 5.40018 15.2171 6.50319 17C7.18332 15.8365 7.86101 14.6578 8.52565 13.5245C8.70679 13.1919 8.91706 12.8595 9.0984 12.542C9.21926 12.3306 9.45017 12.1192 9.55566 11.9226C10.6285 9.95825 12.3555 7.97875 12.3555 6.02933V5.22849C12.3555 5.01715 12.0936 4.2767 12.0788 4.23113ZM6.46781 7.87298C5.71262 7.87298 4.88601 7.49537 4.478 6.45252C4.41721 6.28651 4.42211 5.95384 4.42211 5.92336V5.45492C4.42211 4.12548 5.55093 3.52091 6.53295 3.52091C7.74192 3.52091 8.67695 4.48815 8.67695 5.69713C8.67695 6.90606 7.67678 7.87298 6.46781 7.87298Z" fill="white"/>
+                        </svg>
+                        </div>
+                        <div class="address__text">
+                        <address>г.Санкт Петербург, ул.Куйбышева 31</address>
+                        </div>
+                        <div class="map">
+                            <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A94c1675e79a1f4a07ddd2c1a404d2d58ad721bf5ae1e695a9991c9819b8be04c&amp;width=335&amp;height=267&amp;lang=ru_RU&amp;scroll=true"></script>
+                        </div>
+                    </div>
+                    <div class="number-block">
+                        <div class="number__icon">
+                            <svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M14.4455 12.5686C13.8247 11.9557 13.0498 11.9557 12.4329 12.5686C11.9624 13.0351 11.4919 13.5017 11.0293 13.9762C10.9028 14.1067 10.796 14.1343 10.6418 14.0473C10.3374 13.8813 10.0132 13.7468 9.72058 13.565C8.35648 12.707 7.21381 11.6038 6.20161 10.3623C5.69947 9.74551 5.25268 9.08521 4.94032 8.34188C4.87706 8.19163 4.88892 8.09278 5.01149 7.97021C5.482 7.51551 5.94065 7.04895 6.40326 6.58239C7.04774 5.93395 7.04774 5.17481 6.39931 4.52241C6.03159 4.15075 5.66388 3.78699 5.29617 3.41532C4.9166 3.03575 4.54098 2.65222 4.15745 2.2766C3.53669 1.67166 2.76172 1.67166 2.14492 2.28056C1.67045 2.74712 1.21575 3.22554 0.733378 3.68419C0.286589 4.10725 0.0612166 4.62522 0.0137699 5.23016C-0.061354 6.21468 0.179833 7.14385 0.519868 8.04929C1.21575 9.92343 2.2754 11.588 3.56041 13.1142C5.29617 15.1782 7.36801 16.8111 9.79175 17.9894C10.883 18.5192 12.0138 18.9264 13.2435 18.9937C14.0896 19.0411 14.825 18.8276 15.4142 18.1673C15.8175 17.7166 16.2722 17.3053 16.6992 16.8744C17.3318 16.2338 17.3358 15.4589 16.7071 14.8263C15.9559 14.0711 15.2007 13.3198 14.4455 12.5686Z" fill="white"/>
+                                <path d="M13.6905 9.41851L15.1495 9.16942C14.9202 7.82905 14.2876 6.6152 13.3268 5.65045C12.3106 4.6343 11.0256 3.99377 9.6101 3.79608L9.4045 5.26297C10.4997 5.41717 11.4961 5.91141 12.2829 6.69824C13.0263 7.44157 13.5126 8.38259 13.6905 9.41851Z" fill="white"/>
+                                <path d="M15.9718 3.07613C14.2875 1.39177 12.1563 0.328173 9.80374 0L9.59814 1.46689C11.6304 1.75157 13.473 2.67283 14.928 4.12391C16.3079 5.50382 17.2133 7.24748 17.5415 9.16512L19.0005 8.91603C18.617 6.69394 17.5692 4.67745 15.9718 3.07613Z" fill="white"/>
+                            </svg>
+                        </div>
+                        <div class="number__tel">
+                            <a href="tel:+7 (812) 844-95-49">8 (812) 844-95-49</a>                           
+                            <p class="number__text">Ежедневно с 9:00 до 20:00</p>
+                        </div>
+                    </div>
+                </div>
+            </div>           
+        </div>
+    </header>
+    <section class="intro">
+        <div class="container">
+            <div class="intro__inner">
+                <h2 class="intro__headtitle headtitle">ВКУСНЕЙШИЕ</h2>
+                <h2 class="intro__title">Пирожные и капкейки от 150 ₽/шт. с доставкой по Санкт Петербургу</h2>
+                <h3 class="intro__subtitle">Приготовим за 3 часа в день заказа. Доставка на авто в холодильнике.</h3>
+                <div class="intro__button-catalog">
+                    <a href="#" class="intro__button btn">Перейти в каталог</a>
+                    <p class="intro__button-text">9 различных видов на выбор</p>
+                </div>                
+            </div>
+        </div>
+    </section>
+    <section class="catalog">
+        <div class="container">
+            <h2 class="catalog__title">Для любых событий и дорогих вам людей</h2>
+            <div class="catalog__inner">                
+                <div class="catalog__item">
+                    <div class="catalog__item-img">
+                        <img src="./img/catalog_item-1.jpg" alt="">
+                    </div>
+                    <div class="catalog__item-text">
+                        <h3 class="catalog__item-name">Кремовый замок</h3>
+                        <p class="catalog__item-description">Нежный крем любого цвета на выбор, вафельная основа</p>
+                        <div class="catalog__item-price"><span>150 ₽/шт.</span></div>
+                        <button class="catalog__item-button btn">Заказать</button>
+                    </div>
+                </div>
+                <div class="catalog__item">
+                    <div class="catalog__item-img">
+                        <img src="./img/catalog_item-1.jpg" alt="">
+                    </div>
+                    <div class="catalog__item-text">
+                        <h3 class="catalog__item-name">Кремовый замок</h3>
+                        <p class="catalog__item-description">Нежный крем любого цвета на выбор, вафельная основа</p>
+                        <div class="catalog__item-price"><span>150 ₽/шт.</span></div>
+                        <button class="catalog__item-button btn">Заказать</button>
+                    </div>
+                </div>
+                <div class="catalog__item">
+                    <div class="catalog__item-img">
+                        <img src="./img/catalog_item-1.jpg" alt="">
+                    </div>
+                    <div class="catalog__item-text">
+                        <h3 class="catalog__item-name">Кремовый замок</h3>
+                        <p class="catalog__item-description">Нежный крем любого цвета на выбор, вафельная основа</p>
+                        <div class="catalog__item-price"><span>150 ₽/шт.</span></div>
+                        <button class="catalog__item-button btn">Заказать</button>
+                    </div>
+                </div>
+                <div class="catalog__item">
+                    <div class="catalog__item-img">
+                        <img src="./img/catalog_item-1.jpg" alt="">
+                    </div>
+                    <div class="catalog__item-text">
+                        <h3 class="catalog__item-name">Кремовый замок</h3>
+                        <p class="catalog__item-description">Нежный крем любого цвета на выбор, вафельная основа</p>
+                        <div class="catalog__item-price"><span>150 ₽/шт.</span></div>
+                        <button class="catalog__item-button btn">Заказать</button>
+                    </div>
+                </div>
+                <div class="catalog__item">
+                    <div class="catalog__item-img">
+                        <img src="./img/catalog_item-1.jpg" alt="">
+                    </div>
+                    <div class="catalog__item-text">
+                        <h3 class="catalog__item-name">Кремовый замок</h3>
+                        <p class="catalog__item-description">Нежный крем любого цвета на выбор, вафельная основа</p>
+                        <div class="catalog__item-price"><span>150 ₽/шт.</span></div>
+                        <button class="catalog__item-button btn">Заказать</button>
+                    </div>
+                </div>
+                <div class="catalog__item">
+                    <div class="catalog__item-img">
+                        <img src="./img/catalog_item-1.jpg" alt="">
+                    </div>
+                    <div class="catalog__item-text">
+                        <h3 class="catalog__item-name">Кремовый замок</h3>
+                        <p class="catalog__item-description">Нежный крем любого цвета на выбор, вафельная основа</p>
+                        <div class="catalog__item-price"><span>150 ₽/шт.</span></div>
+                        <button class="catalog__item-button btn">Заказать</button>
+                    </div>
+                </div>
+                <div class="catalog__item">
+                    <div class="catalog__item-img">
+                        <img src="./img/catalog_item-1.jpg" alt="">
+                    </div>
+                    <div class="catalog__item-text">
+                        <h3 class="catalog__item-name">Кремовый замок</h3>
+                        <p class="catalog__item-description">Нежный крем любого цвета на выбор, вафельная основа</p>
+                        <div class="catalog__item-price"><span>150 ₽/шт.</span></div>
+                        <button class="catalog__item-button btn">Заказать</button>
+                    </div>
+                </div>
+                <div class="catalog__item">
+                    <div class="catalog__item-img">
+                        <img src="./img/catalog_item-1.jpg" alt="">
+                    </div>
+                    <div class="catalog__item-text">
+                        <h3 class="catalog__item-name">Кремовый замок</h3>
+                        <p class="catalog__item-description">Нежный крем любого цвета на выбор, вафельная основа</p>
+                        <div class="catalog__item-price"><span>150 ₽/шт.</span></div>
+                        <button class="catalog__item-button btn">Заказать</button>
+                    </div>
+                </div>
+                <div class="catalog__item">
+                    <div class="catalog__item-img">
+                        <img src="./img/catalog_item-1.webp" alt="">
+                    </div>
+                    <div class="catalog__item-text">
+                        <h3 class="catalog__item-name">Кремовый замок</h3>
+                        <p class="catalog__item-description">Нежный крем любого цвета на выбор, вафельная основа</p>
+                        <div class="catalog__item-price"><span>150 ₽/шт.</span></div>
+                        <button class="catalog__item-button btn">Заказать</button>
+                    </div>
+                </div>
+                <div class="catalog__decoration">
+                    <img class="decoration-item-1" src="./img/berry.png" alt="">
+                    <img class="decoration-item-2" src="./img/leaf.png" alt="">
+                    <img class="decoration-item-3" src="./img/leaf.png" alt="">
+                </div>                            
+            </div>           
+        </div>
+    </section>
+    <section class="content">
+        <div class="container">
+            <div class="content__inner">
+                <div class="content__photo">
+                    <img src="./img/phone 1.png" alt="" class="content__img">
+                </div>
+                
+                <div class="content__text">
+                    <h2 class="content__headtitle headtitle">Не нашли то что нужно?</h2>
+                    <h3 class="content__title">Приготовим заказ любой сложности по фото или эскизу</h3>
+                    <div class="content__subtitle"> <p>Загрузите фотографию или эскиз капкейков и мы рассчитаем стоимость за 30 минут</p></div>
+                    <button class="content__button-photo btn">Загрузить фотографию</button>
+                </div>               
+            </div>
+        </div>
+    </section>
+    <section class="executor-info">
+        <div class="container">
+            <div class="executor-info__inner">
+                <div class="executor__text">
+                    <h2 class="executor__headtitle headtitle">Кто будет готовить?</h2>
+                    <h3 class="executor__title">Лично приготовлю <br>и всё красиво упакую для вашего события</h3>
+                    <ul class="executor__featured-list">
+                        <li class="executor__featured-item">
+                            <p>Проконсультирую по выбору капкейкови придумаю нестандартную идею</p>
+                        </li>
+                        <li class="executor__featured-item">
+                            <p>Приготовлю капкейки для вашего события, которые обязательно всем понравятся</p>
+                        </li>
+                        <li class="executor__featured-item">
+                            <p>Аккуратно и красиво всё упакую, если вы хотите сделать приятный подарок</p>
+                        </li>
+                    </ul>
+                    <div class="executor__btn btn">
+                        <a href="">Задать вопрос Юлии</a>
+                    </div>                    
+                </div>
+                <div class="executor__photo">
+                    <img  class="executor__img" src="./img/woman 2.png" alt="">
+                </div>
+                <div class="executor__photo-text">
+                    <div class="executor__photo-title"> <span>Юлия Кондратьева</span></div>
+                    <div class="executor__photo-subtitle"> <span>ваш кондитер</span></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="reviews">
+        <div class="reviews__title">Почитайте отзывы довольных клиентов</div>
+        <div class="slider__wraper">            
+            <!-- Slider main container -->
+            <div class="swiper">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide">
+                        <div class="slide__text">
+                            <div class="slide__quotes">
+                                <svg width="32" height="22" viewBox="0 0 32 22" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M0.719421 14.9744L0.718445 14.9666L0.688171 13.9939C0.688325 6.79505 6.39148 0.928865 13.5261 0.665771V3.62183C11.1128 3.73565 8.84752 4.67109 7.05829 6.2937L6.68329 6.65112C6.30608 7.02839 5.96171 7.43053 5.65106 7.85229L4.92938 8.83179L6.13153 8.64233C6.45955 8.59071 6.79588 8.56323 7.13837 8.56323C10.6833 8.56335 13.5571 11.4373 13.5573 14.9822C13.5573 18.5272 10.6834 21.402 7.13837 21.4021C3.5932 21.4021 0.719421 18.5273 0.719421 14.9822V14.9744ZM18.5114 14.9744L18.5104 14.9666L18.4802 13.9939C18.4803 6.79503 24.1834 0.928839 31.3181 0.665771V3.62183C28.9049 3.73564 26.6395 4.67109 24.8503 6.2937L24.4753 6.65112C24.098 7.02841 23.7537 7.43053 23.4431 7.85229L22.7214 8.83179L23.9235 8.64233C24.2515 8.59072 24.5878 8.56323 24.9304 8.56323C28.4752 8.56337 31.3491 11.4374 31.3493 14.9822C31.3493 18.5272 28.4753 21.402 24.9304 21.4021C21.3852 21.4021 18.5114 18.5273 18.5114 14.9822V14.9744Z" />
+                                </svg>
+                            </div>
+                            <h2 class="slide__title">«Спасибо за прекрасные капкейки, все на высоте»</h2>
+                            <div class="slide__description"><p>«Вставьте отзыв целиком или часть отзыва клиента. Никогда не выдумывайте отзывы самостоятельно. Фильшивые отзывы всегда видно. Будьте честны.Опишите конечный результат, который получил человек после работы с вами. Что конеретно ему это дало. Можно описывать результат в цифрах, чтобы была конкретика»</p></div>
+                            <a href="" class="reviews__all">Читать отзыв полностью</a>
+                        </div>
+                        <div class="slide__author">
+                            <div class="author__photo"><img class="author__img" src="./img/author_1.jpg" alt=""></div>
+                            <div class="author__name">Ирина Ларионова</div>
+                            <div class="author__city">Санкт-Петербург</div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="slide__text">
+                            <div class="slide__quotes">
+                                <svg width="32" height="22" viewBox="0 0 32 22" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M0.719421 14.9744L0.718445 14.9666L0.688171 13.9939C0.688325 6.79505 6.39148 0.928865 13.5261 0.665771V3.62183C11.1128 3.73565 8.84752 4.67109 7.05829 6.2937L6.68329 6.65112C6.30608 7.02839 5.96171 7.43053 5.65106 7.85229L4.92938 8.83179L6.13153 8.64233C6.45955 8.59071 6.79588 8.56323 7.13837 8.56323C10.6833 8.56335 13.5571 11.4373 13.5573 14.9822C13.5573 18.5272 10.6834 21.402 7.13837 21.4021C3.5932 21.4021 0.719421 18.5273 0.719421 14.9822V14.9744ZM18.5114 14.9744L18.5104 14.9666L18.4802 13.9939C18.4803 6.79503 24.1834 0.928839 31.3181 0.665771V3.62183C28.9049 3.73564 26.6395 4.67109 24.8503 6.2937L24.4753 6.65112C24.098 7.02841 23.7537 7.43053 23.4431 7.85229L22.7214 8.83179L23.9235 8.64233C24.2515 8.59072 24.5878 8.56323 24.9304 8.56323C28.4752 8.56337 31.3491 11.4374 31.3493 14.9822C31.3493 18.5272 28.4753 21.402 24.9304 21.4021C21.3852 21.4021 18.5114 18.5273 18.5114 14.9822V14.9744Z" />
+                                </svg>
+                            </div>
+                            <h2 class="slide__title">«Лучшую фразу из отзыва напишите в заголовке»</h2>
+                            <div class="slide__description"><p>«Вставьте отзыв целиком или часть отзыва клиента. Никогда не выдумывайте отзывы самостоятельно. Фильшивые отзывы всегда видно. Будьте честны.
+                                    Опишите конечный результат, который получил человек после работы с вами. Что конеретно ему это дало. Можно описывать результат в цифрах, чтобы была конкретика»</p></div>
+                            <a href="" class="reviews__all">Читать отзыв полностью</a>
+                        </div>
+                        <div class="slide__author">
+                            <div class="author__photo"><img class="author__img" src="./img/author_2.jpg" alt=""></div>
+                            <div class="author__name">Елена Демидова</div>
+                            <div class="author__city">Санкт-Петербург</div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="slide__text">
+                            <div class="slide__quotes">
+                                <svg width="32" height="22" viewBox="0 0 32 22" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M0.719421 14.9744L0.718445 14.9666L0.688171 13.9939C0.688325 6.79505 6.39148 0.928865 13.5261 0.665771V3.62183C11.1128 3.73565 8.84752 4.67109 7.05829 6.2937L6.68329 6.65112C6.30608 7.02839 5.96171 7.43053 5.65106 7.85229L4.92938 8.83179L6.13153 8.64233C6.45955 8.59071 6.79588 8.56323 7.13837 8.56323C10.6833 8.56335 13.5571 11.4373 13.5573 14.9822C13.5573 18.5272 10.6834 21.402 7.13837 21.4021C3.5932 21.4021 0.719421 18.5273 0.719421 14.9822V14.9744ZM18.5114 14.9744L18.5104 14.9666L18.4802 13.9939C18.4803 6.79503 24.1834 0.928839 31.3181 0.665771V3.62183C28.9049 3.73564 26.6395 4.67109 24.8503 6.2937L24.4753 6.65112C24.098 7.02841 23.7537 7.43053 23.4431 7.85229L22.7214 8.83179L23.9235 8.64233C24.2515 8.59072 24.5878 8.56323 24.9304 8.56323C28.4752 8.56337 31.3491 11.4374 31.3493 14.9822C31.3493 18.5272 28.4753 21.402 24.9304 21.4021C21.3852 21.4021 18.5114 18.5273 18.5114 14.9822V14.9744Z" />
+                                </svg>
+                            </div>
+                            <h2 class="slide__title">«Спасибо за прекрасные капкейки, все на высоте»</h2>
+                            <div class="slide__description"><p>«Заказала капкейки, как подарок на новый год. Делать заказ было легко и приятно, ну а результат дико порадовал, друзья были в восторге. И оформление, и на вкус капкейки были просто замечательные. Обязательно буду заказывать еще)) Уже строю планы, чтобы попробовать все начинки. Они восхитительны!) Даже кушать было жалко, такая красота!) </p></div>
+                            <a href="" class="reviews__all">Читать отзыв полностью</a>
+                        </div>
+                        <div class="slide__author">
+                            <div class="author__photo"><img class="author__img" src="./img/author_1.jpg" alt=""></div>
+                            <div class="author__name">Ирина Ларионова</div>
+                            <div class="author__city">Санкт-Петербург</div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="slide__text">
+                            <div class="slide__quotes">
+                                <svg width="32" height="22" viewBox="0 0 32 22" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M0.719421 14.9744L0.718445 14.9666L0.688171 13.9939C0.688325 6.79505 6.39148 0.928865 13.5261 0.665771V3.62183C11.1128 3.73565 8.84752 4.67109 7.05829 6.2937L6.68329 6.65112C6.30608 7.02839 5.96171 7.43053 5.65106 7.85229L4.92938 8.83179L6.13153 8.64233C6.45955 8.59071 6.79588 8.56323 7.13837 8.56323C10.6833 8.56335 13.5571 11.4373 13.5573 14.9822C13.5573 18.5272 10.6834 21.402 7.13837 21.4021C3.5932 21.4021 0.719421 18.5273 0.719421 14.9822V14.9744ZM18.5114 14.9744L18.5104 14.9666L18.4802 13.9939C18.4803 6.79503 24.1834 0.928839 31.3181 0.665771V3.62183C28.9049 3.73564 26.6395 4.67109 24.8503 6.2937L24.4753 6.65112C24.098 7.02841 23.7537 7.43053 23.4431 7.85229L22.7214 8.83179L23.9235 8.64233C24.2515 8.59072 24.5878 8.56323 24.9304 8.56323C28.4752 8.56337 31.3491 11.4374 31.3493 14.9822C31.3493 18.5272 28.4753 21.402 24.9304 21.4021C21.3852 21.4021 18.5114 18.5273 18.5114 14.9822V14.9744Z" />
+                                </svg>
+                            </div>
+                            <h2 class="slide__title">«Спасибо за прекрасные капкейки, все на высоте»</h2>
+                            <div class="slide__description"><p>«Заказала капкейки, как подарок на новый год. Делать заказ было легко и приятно, ну а результат дико порадовал, друзья были в восторге. И оформление, и на вкус капкейки были просто замечательные. Обязательно буду заказывать еще)) Уже строю планы, чтобы попробовать все начинки. Они восхитительны!) Даже кушать было жалко, такая красота!) </p></div>
+                            <a href="" class="reviews__all">Читать отзыв полностью</a>
+                        </div>
+                        <div class="slide__author">
+                            <div class="author__photo"><img class="author__img" src="./img/author_1.jpg" alt=""></div>
+                            <div class="author__name">Ирина Ларионова</div>
+                            <div class="author__city">Санкт-Петербург</div>
+                        </div>
+                    </div>
+                </div>      
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev myslider-prev">
+                    <svg class="prev-btn-icon" width="5" height="5" viewBox="0 0 17 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M14.106 2.70618L3.74011 13.072L14.106 23.4379" stroke="#2E363E" stroke-width="4" stroke-linecap="round"/>
+                    </svg>
+                </div>
+                <div class="swiper-button-next myslider-next">
+                    <svg class="next-btn-icon" width="5" height="5" viewBox="0 0 17 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M14.106 2.70618L3.74011 13.072L14.106 23.4379" stroke="#2E363E" stroke-width="4" stroke-linecap="round"/>
+                    </svg>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="reviews__decoration">
+                <img class="reviews__decoration-item-1" src="./img/leaf.png" alt="">
+                <img class="reviews__decoration-item-2" src="./img/berry.png" alt="">
+            </div>
+        </div>
+    </section>
+    <section class="gallery">
+        <div class="gallery__text">
+            <h2 class="gallery__title">Сделали более 3.000 заказов за 2 года</h2>
+            <div class="gallery__subtitle"><p>Посмотрите фото реальных заказов из нашего instagram</p></div>
+        </div>        
+        <div class="gallery__items">
+            <div class="gallery__item">
+                <img class="gallery__item-img" src="./img/gallery_1.jpg" alt="">
+            </div>
+            <div class="gallery__item">
+                <img class="gallery__item-img" src="./img/gallery_2.jpg" alt="">
+            </div>            
+            <div class="gallery__item">
+                <img class="gallery__item-img" src="./img/gallery_3.jpg" alt="">
+            </div>
+            <div class="gallery__item">
+                <img class="gallery__item-img" src="./img/gallery_4.jpg" alt="">
+            </div>
+            <div class="gallery__item">
+                <img class="gallery__item-img" src="./img/gallery_5.jpg" alt="">
+            </div>  
+            <div class="gallery__item">
+                <img class="gallery__item-img" src="./img/gallery_6.jpg" alt="">
+            </div>     
+            <div class="gallery__item">
+                <img class="gallery__item-img" src="./img/gallery_7.jpg" alt="">                
+            </div>
+            <div class="gallery__item">
+                <img class="gallery__item-img" src="./img/gallery_8.jpg" alt="">
+            </div>
+            <div class="gallery__item">
+                <img class="gallery__item-img" src="./img/gallery_9.jpg" alt="">
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__inner">
+                <form class="footer__form">
+                    <div class="footer__text">
+                        <h2 class="footer__title">Чтобы сделать заказ, укажите ваш телефон</h2>
+                        <p class="footer__subtitle">Мы перезвоним в течении 15 минут, чтобы уточнить ваши пожелания</p>
+                    </div>
+                    
+                    <div class="footer__input-block">
+                        <input class="footer__input" type="text" placeholder="Введите телефон">
+                        <div class="input__icon"><svg width="15" height="14" viewBox="0 0 15 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12.2744 8.758C11.7684 8.25849 11.1368 8.25849 10.634 8.758C10.2505 9.13828 9.86705 9.51855 9.49 9.90527C9.38687 10.0116 9.29986 10.0342 9.17418 9.96328C8.92603 9.82793 8.66177 9.71836 8.4233 9.57011C7.31148 8.87079 6.38012 7.97167 5.55512 6.95975C5.14584 6.45702 4.78168 5.91883 4.52709 5.31297C4.47553 5.19051 4.4852 5.10994 4.5851 5.01004C4.9686 4.63943 5.34243 4.25916 5.71948 3.87888C6.24477 3.35037 6.24477 2.73161 5.71626 2.19987C5.41655 1.89694 5.11684 1.60046 4.81713 1.29753C4.50776 0.988151 4.2016 0.675553 3.889 0.369399C3.38305 -0.123669 2.7514 -0.123669 2.24867 0.372622C1.86195 0.752897 1.49134 1.14284 1.09818 1.51667C0.734015 1.86149 0.550323 2.28366 0.511651 2.77673C0.45042 3.57918 0.647003 4.3365 0.924152 5.07449C1.49134 6.60204 2.35502 7.95878 3.40238 9.20273C4.81713 10.885 6.50581 12.2159 8.4813 13.1763C9.37076 13.6081 10.2924 13.9401 11.2947 13.9948C11.9843 14.0335 12.5838 13.8595 13.0639 13.3213C13.3926 12.9539 13.7633 12.6188 14.1113 12.2675C14.6269 11.7454 14.6301 11.1138 14.1177 10.5981C13.5054 9.98261 12.8899 9.37031 12.2744 8.758Z" fill="#929AA2"/>
+                        </svg>
+                    </div>
+                    </div>
+                    
+                    <button class="footer__btn btn">Сделать заказ</button>
+                    <div class="checkbox__footer">
+                        <input type="checkbox" name="" id="">
+                        <a href="#" class="footer__checkbox-text">Нажамая на кнопку, вы соглашаетесь с условиями обработки персональных данных</a>
+                    </div>                    
+                </form>
+                <div class="footer__decoration">
+                    <img class="footer__decoration-item-1" src="./img/leaf.png" alt="">
+                    <img class="footer__decoration-item-2" src="./img/berry.png" alt="">
+                    <img class="footer__decoration-item-3" src="./img/berry.png" alt="">
+                    <img class="footer__decoration-item-4" src="./img/leaf.png" alt="">
+                </div>
+            </div>            
+        </div>
+        <div class="footer__copyright">
+            <ul class="footer__copyright-list">
+                <li class="footer__copyright-item"><a href="#">Согласие на обработку данных</a></li>
+                <li class="footer__copyright-item"><a href="#">Служба поддержки</a></li>
+                <li class="footer__copyright-item"><a href="#">Политика конфиденциальности</a></li>
+            </ul>
+            <p class="footer__copyright-text">© nazvaniesaita.ru, 2054 | Название компании или ИП ОГРН 0000000000000</p>
+        </div>
+    </footer>
+
+    
+    <script src="./script.js"></script>
+</body>
+</html>
